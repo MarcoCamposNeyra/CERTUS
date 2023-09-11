@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <!--ACTION: ENDPONIT, URL que es proporcionada por el backend
+        
+            URL:http://www.ejemplo.com/contacto
+            METHOD: 
+                POST - Enviamos a guardar informacion o un form contacto
+                Get - Solicitamos informacion, traer datos.
+            REQUEST:
+                Direccion
+                Genero
+                idioma
+                email
+
+        -->
+        <form action="http://www.ejemplo.com/contacto" method="post">
+            <!-- AQUI VA MI FORMULARIO DE CONTACTENOS -->
+            
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" id="direccion" placeholder="Aqui direccion de su casa"/>
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" min="5" max="10" value="18"/>
+            <br>
+            Email: <input type="email" name="email" id="email" placeholder=""/>
+            <br>
+            <label for="genero">Genero</label>
+            <input name="genero" id="genero-masculino" type="radio" value="m"/>
+            <label for="genero-masculino">M</label>
+            <input name="genero" id="genero-femenino" type="radio" value="f"/>
+            <label for="genero-femenino">F</label>
+            <br>
+
+
+
+
+
+
+            <label for="idiomas">Idiomas</label>
+            <input name="idiomas" id="idiomas-ingles" type="checkbox" value="m"/>
+            <label for="idiomas-ingles">Ingles</label>
+            <input name="idiomas" id="idiomas-frances" type="checkbox" value="f"/>
+            <label for="idiomas-frances">Frances</label>
+            <br>
+
+
+
+            <input type="submit" value="ENVIAR" />
+            <button type="submit">ENVIAR</button>
+
+        </form>
+    </body>
+</html>
