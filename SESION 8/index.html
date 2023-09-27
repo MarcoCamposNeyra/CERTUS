@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CATALOGO DE PRODUCTOS</title>
+    </head>
+
+    <body>
+        <h1>Bienvenido</h1>
+        <div id="mensaje">Este es un mensaje</div>
+
+        <script>
+            let valor1 =10;
+            let precio = 10;
+            
+            let calcularIgv = function(precio) {
+                
+                const igv = 0.18;
+
+                let resultado =precio * igv;
+
+                return resultado; //18
+            }
+
+            let igvCalculado = calcularIgv(precio);
+
+            console.log(igvCalculado);
+
+            if(igvCalculado >= 18 && igvCalculado % 2 == 0) {
+                console.log("si mayor o igual a 18 y es par");
+            } else if(igvCalculado <18){
+                console.log("Es menor a 18")
+            }else{
+                console.log("No es mayor o igual a 18");
+            }
+        
+
+            let tipoPersona = "RUC";
+
+            switch (tipoPersona){
+                case "RUC":
+                console.log("es RUC");
+                break;
+
+                case "DNI":
+                break;
+                console.log("es DNI");
+
+                case "CE":
+                console.log("es RUC");
+                break;
+
+                default:
+                console.log("tipo persona invalido");
+                break;
+            }
+
+            //Bucles
+
+            let edades = [10,15,18,20,25,32];
+            let cantEdades = edades.length;
+
+            //for (indicador; condicion; ca a ir incrementando)
+            for (let index = 0; index < edades.length; index++){
+                console.log(edades[index]);
+                console.log(index);
+                
+            }
+
+            
+
+
+
+
+
+        </script>
+    </body>
+</html>
